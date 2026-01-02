@@ -1,0 +1,2820 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.1003.1601                               -->
+<workbook original-version='18.1' source-build='2025.2.4 (20252.25.1003.1601)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SingleValuePerNestSorting />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Sheet1 (stress_by_age)' inline='true' name='federated.1hqyr7t01ertvh17gp5dn1682u5q' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='stress_by_age' name='excel-direct.1k2uw7p1rkaccr18eh2ci009rdow'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='D:/Financial Health &amp; Stress Analysis/stress_by_age.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.1k2uw7p1rkaccr18eh2ci009rdow' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:C6:no:A1:C6:0' header='yes' outcome='6'>
+            <column datatype='string' name='age_group' ordinal='0' />
+            <column datatype='real' name='stress_rate' ordinal='1' />
+            <column datatype='integer' name='respondents' ordinal='2' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:C6:no:A1:C6:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>age_group</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[age_group]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>age_group</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_248248D3EB074003B48E31D755A7C0AE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stress_rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[stress_rate]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>stress_rate</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_248248D3EB074003B48E31D755A7C0AE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>respondents</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[respondents]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>respondents</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_248248D3EB074003B48E31D755A7C0AE]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_248248D3EB074003B48E31D755A7C0AE]' role='measure' type='quantitative' />
+      <column caption='Age Group' datatype='string' name='[age_group]' role='dimension' type='nominal' />
+      <column caption='Respondents' datatype='integer' name='[respondents]' role='measure' type='quantitative' />
+      <column caption='Stress Rate' datatype='real' name='[stress_rate]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/isaac/AppData/Local/Temp/TableauTemp/#TableauTemp_1gg3ove13vqdsz11yrxid102zbg4.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='01/02/2026 11:22:07 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>age_group</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[age_group]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>age_group</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Sheet1_248248D3EB074003B48E31D755A7C0AE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>stress_rate</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[stress_rate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>stress_rate</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_248248D3EB074003B48E31D755A7C0AE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>respondents</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[respondents]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>respondents</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_248248D3EB074003B48E31D755A7C0AE]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Sheet1' id='Sheet1_248248D3EB074003B48E31D755A7C0AE'>
+            <properties context=''>
+              <relation connection='excel-direct.1k2uw7p1rkaccr18eh2ci009rdow' name='Sheet1' table='[Sheet1$]' type='table'>
+                <columns gridOrigin='A1:C6:no:A1:C6:0' header='yes' outcome='6'>
+                  <column datatype='string' name='age_group' ordinal='0' />
+                  <column datatype='real' name='stress_rate' ordinal='1' />
+                  <column datatype='integer' name='respondents' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='Sheet1 (Stress_by_residence)' inline='true' name='federated.1pbg3im1ewqwnr19nzwdf1wmdou4' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Stress_by_residence' name='excel-direct.0fhbuqu0jsyfz916bjzk503hz5vm'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='D:/Financial Health &amp; Stress Analysis/Stress_by_residence.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.0fhbuqu0jsyfz916bjzk503hz5vm' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:C3:no:A1:C3:0' header='yes' outcome='6'>
+            <column datatype='string' name='Residence' ordinal='0' />
+            <column datatype='real' name='stress_rate' ordinal='1' />
+            <column datatype='integer' name='respondents' ordinal='2' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:C3:no:A1:C3:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Residence</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Residence]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Residence</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_D3FC331A688B40DFA2D1ADDE97A74C96]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stress_rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[stress_rate]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>stress_rate</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_D3FC331A688B40DFA2D1ADDE97A74C96]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>respondents</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[respondents]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>respondents</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_D3FC331A688B40DFA2D1ADDE97A74C96]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_D3FC331A688B40DFA2D1ADDE97A74C96]' role='measure' type='quantitative' />
+      <column caption='Respondents' datatype='integer' name='[respondents]' role='measure' type='quantitative' />
+      <column caption='Stress Rate' datatype='real' name='[stress_rate]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/isaac/AppData/Local/Temp/TableauTemp/#TableauTemp_0odl1g91yk2n0u1a2sl2h1k73qxx.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='01/02/2026 11:22:30 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Residence</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Residence]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Residence</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Sheet1_D3FC331A688B40DFA2D1ADDE97A74C96]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>stress_rate</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[stress_rate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>stress_rate</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_D3FC331A688B40DFA2D1ADDE97A74C96]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>respondents</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[respondents]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>respondents</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_D3FC331A688B40DFA2D1ADDE97A74C96]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Sheet1' id='Sheet1_D3FC331A688B40DFA2D1ADDE97A74C96'>
+            <properties context=''>
+              <relation connection='excel-direct.0fhbuqu0jsyfz916bjzk503hz5vm' name='Sheet1' table='[Sheet1$]' type='table'>
+                <columns gridOrigin='A1:C3:no:A1:C3:0' header='yes' outcome='6'>
+                  <column datatype='string' name='Residence' ordinal='0' />
+                  <column datatype='real' name='stress_rate' ordinal='1' />
+                  <column datatype='integer' name='respondents' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='Sheet1 (stress_by_multiple_factors)' inline='true' name='federated.1pt7qux18gl2rg18yfasw10rb390' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='stress_by_multiple_factors' name='excel-direct.11z4qac1fq5y2317clvb301sctbu'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='D:/Financial Health &amp; Stress Analysis/stress_by_multiple_factors.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.11z4qac1fq5y2317clvb301sctbu' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:E23:no:A1:E23:0' header='yes' outcome='6'>
+            <column datatype='string' name='Income_Shortfall_Freq' ordinal='0' />
+            <column datatype='string' name='Saves_Money' ordinal='1' />
+            <column datatype='string' name='Emergency_Fund' ordinal='2' />
+            <column datatype='real' name='stress_rate' ordinal='3' />
+            <column datatype='integer' name='respondents' ordinal='4' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:E23:no:A1:E23:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Income_Shortfall_Freq</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Income_Shortfall_Freq]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Income_Shortfall_Freq</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_EB0C5E0E0EE8452E9D71C577BA652178]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Saves_Money</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Saves_Money]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Saves_Money</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_EB0C5E0E0EE8452E9D71C577BA652178]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Emergency_Fund</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Emergency_Fund]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Emergency_Fund</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_EB0C5E0E0EE8452E9D71C577BA652178]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stress_rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[stress_rate]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>stress_rate</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_EB0C5E0E0EE8452E9D71C577BA652178]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>respondents</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[respondents]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>respondents</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_EB0C5E0E0EE8452E9D71C577BA652178]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Emergency Fund' datatype='string' name='[Emergency_Fund]' role='dimension' type='nominal' />
+      <column caption='Income Shortfall Freq' datatype='string' name='[Income_Shortfall_Freq]' role='dimension' type='nominal' />
+      <column caption='Saves Money' datatype='string' name='[Saves_Money]' role='dimension' type='nominal' />
+      <column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_EB0C5E0E0EE8452E9D71C577BA652178]' role='measure' type='quantitative' />
+      <column caption='Respondents' datatype='integer' name='[respondents]' role='measure' type='quantitative' />
+      <column caption='Stress Rate' datatype='real' name='[stress_rate]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/isaac/AppData/Local/Temp/TableauTemp/#TableauTemp_1hm6klj10duz3u1ao6ofz154o61t.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='01/02/2026 11:24:40 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Income_Shortfall_Freq</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Income_Shortfall_Freq]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Income_Shortfall_Freq</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Sheet1_EB0C5E0E0EE8452E9D71C577BA652178]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Saves_Money</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Saves_Money]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Saves_Money</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Sheet1_EB0C5E0E0EE8452E9D71C577BA652178]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Emergency_Fund</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Emergency_Fund]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Emergency_Fund</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Sheet1_EB0C5E0E0EE8452E9D71C577BA652178]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>stress_rate</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[stress_rate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>stress_rate</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>22</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_EB0C5E0E0EE8452E9D71C577BA652178]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>respondents</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[respondents]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>respondents</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>21</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_EB0C5E0E0EE8452E9D71C577BA652178]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Sheet1' id='Sheet1_EB0C5E0E0EE8452E9D71C577BA652178'>
+            <properties context=''>
+              <relation connection='excel-direct.11z4qac1fq5y2317clvb301sctbu' name='Sheet1' table='[Sheet1$]' type='table'>
+                <columns gridOrigin='A1:E23:no:A1:E23:0' header='yes' outcome='6'>
+                  <column datatype='string' name='Income_Shortfall_Freq' ordinal='0' />
+                  <column datatype='string' name='Saves_Money' ordinal='1' />
+                  <column datatype='string' name='Emergency_Fund' ordinal='2' />
+                  <column datatype='real' name='stress_rate' ordinal='3' />
+                  <column datatype='integer' name='respondents' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='Sheet1 (Stress_respondents_percentage)' inline='true' name='federated.1dm9c6a0eupvvk1a29e7z0pkrqc8' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Stress_respondents_percentage' name='excel-direct.0hhgqf51kmc2g11du9tcx16vq7ns'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='D:/Financial Health &amp; Stress Analysis/Stress_respondents_percentage.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.0hhgqf51kmc2g11du9tcx16vq7ns' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:C2:no:A1:C2:0' header='yes' outcome='6'>
+            <column datatype='integer' name='total_respondents' ordinal='0' />
+            <column datatype='integer' name='stressed_count' ordinal='1' />
+            <column datatype='real' name='stress_related_percent' ordinal='2' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:C2:no:A1:C2:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_respondents</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_respondents]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>total_respondents</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_08D7B06FB68F47C083CA31051A6ABBD2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stressed_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[stressed_count]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>stressed_count</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_08D7B06FB68F47C083CA31051A6ABBD2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stress_related_percent</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[stress_related_percent]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>stress_related_percent</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_08D7B06FB68F47C083CA31051A6ABBD2]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_08D7B06FB68F47C083CA31051A6ABBD2]' role='measure' type='quantitative' />
+      <column caption='Stress Related Percent' datatype='real' name='[stress_related_percent]' role='measure' type='quantitative' />
+      <column caption='Stressed Count' datatype='integer' name='[stressed_count]' role='measure' type='quantitative' />
+      <column caption='Total Respondents' datatype='integer' name='[total_respondents]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/isaac/AppData/Local/Temp/TableauTemp/#TableauTemp_1wr0zi00till541cdqzm10jo233x.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='01/02/2026 11:25:00 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>total_respondents</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[total_respondents]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>total_respondents</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_08D7B06FB68F47C083CA31051A6ABBD2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>stressed_count</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[stressed_count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>stressed_count</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_08D7B06FB68F47C083CA31051A6ABBD2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>stress_related_percent</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[stress_related_percent]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>stress_related_percent</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_08D7B06FB68F47C083CA31051A6ABBD2]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Sheet1' id='Sheet1_08D7B06FB68F47C083CA31051A6ABBD2'>
+            <properties context=''>
+              <relation connection='excel-direct.0hhgqf51kmc2g11du9tcx16vq7ns' name='Sheet1' table='[Sheet1$]' type='table'>
+                <columns gridOrigin='A1:C2:no:A1:C2:0' header='yes' outcome='6'>
+                  <column datatype='integer' name='total_respondents' ordinal='0' />
+                  <column datatype='integer' name='stressed_count' ordinal='1' />
+                  <column datatype='real' name='stress_related_percent' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='Sheet1 (resilience_by_bank)' inline='true' name='federated.0oz604y032cr8h195eqe9117h1y2' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='resilience_by_bank' name='excel-direct.0lr4qwa11rvr5n1cqxidl01govov'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='D:/Financial Health &amp; Stress Analysis/resilience_by_bank.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.0lr4qwa11rvr5n1cqxidl01govov' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:D10:no:A1:D10:0' header='yes' outcome='6'>
+            <column datatype='string' name='Has_Bank_Account' ordinal='0' />
+            <column datatype='string' name='Has_Mobile_Money' ordinal='1' />
+            <column datatype='real' name='resilience_rate' ordinal='2' />
+            <column datatype='integer' name='respondents' ordinal='3' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:D10:no:A1:D10:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Has_Bank_Account</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Has_Bank_Account]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Has_Bank_Account</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_A3CD38A38816474EA6ABEB40576ED279]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Has_Mobile_Money</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Has_Mobile_Money]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Has_Mobile_Money</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_A3CD38A38816474EA6ABEB40576ED279]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>resilience_rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[resilience_rate]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>resilience_rate</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_A3CD38A38816474EA6ABEB40576ED279]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>respondents</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[respondents]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>respondents</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_A3CD38A38816474EA6ABEB40576ED279]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Has Bank Account' datatype='string' name='[Has_Bank_Account]' role='dimension' type='nominal' />
+      <column caption='Has Mobile Money' datatype='string' name='[Has_Mobile_Money]' role='dimension' type='nominal' />
+      <column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_A3CD38A38816474EA6ABEB40576ED279]' role='measure' type='quantitative' />
+      <column caption='Resilience Rate' datatype='real' name='[resilience_rate]' role='measure' type='quantitative' />
+      <column caption='Respondents' datatype='integer' name='[respondents]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/isaac/AppData/Local/Temp/TableauTemp/#TableauTemp_1gp0ot60kyz7qq14rsrpi17q01ht.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='01/02/2026 11:43:38 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Has_Bank_Account</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Has_Bank_Account]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Has_Bank_Account</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Sheet1_A3CD38A38816474EA6ABEB40576ED279]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Has_Mobile_Money</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Has_Mobile_Money]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Has_Mobile_Money</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Sheet1_A3CD38A38816474EA6ABEB40576ED279]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>resilience_rate</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[resilience_rate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>resilience_rate</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_A3CD38A38816474EA6ABEB40576ED279]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>respondents</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[respondents]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>respondents</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_A3CD38A38816474EA6ABEB40576ED279]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Sheet1' id='Sheet1_A3CD38A38816474EA6ABEB40576ED279'>
+            <properties context=''>
+              <relation connection='excel-direct.0lr4qwa11rvr5n1cqxidl01govov' name='Sheet1' table='[Sheet1$]' type='table'>
+                <columns gridOrigin='A1:D10:no:A1:D10:0' header='yes' outcome='6'>
+                  <column datatype='string' name='Has_Bank_Account' ordinal='0' />
+                  <column datatype='string' name='Has_Mobile_Money' ordinal='1' />
+                  <column datatype='real' name='resilience_rate' ordinal='2' />
+                  <column datatype='integer' name='respondents' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='Sheet1 (Saving_stress_evaluation)' inline='true' name='federated.0b259fy0eawaqd17w1hmk1hjonki' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Saving_stress_evaluation' name='excel-direct.1r6pp7e1l57utn12z2z270w78cyo'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='D:/Financial Health &amp; Stress Analysis/Saving_stress_evaluation.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.1r6pp7e1l57utn12z2z270w78cyo' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:C4:no:A1:C4:0' header='yes' outcome='6'>
+            <column datatype='string' name='Saves_Money' ordinal='0' />
+            <column datatype='integer' name='respondents' ordinal='1' />
+            <column datatype='real' name='stress_rate' ordinal='2' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:C4:no:A1:C4:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Saves_Money</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Saves_Money]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Saves_Money</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_4E6D3A9312C048C49C5A0481DF0BDA14]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>respondents</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[respondents]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>respondents</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_4E6D3A9312C048C49C5A0481DF0BDA14]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stress_rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[stress_rate]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>stress_rate</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_4E6D3A9312C048C49C5A0481DF0BDA14]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Saves Money' datatype='string' name='[Saves_Money]' role='dimension' type='nominal' />
+      <column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_4E6D3A9312C048C49C5A0481DF0BDA14]' role='measure' type='quantitative' />
+      <column caption='Respondents' datatype='integer' name='[respondents]' role='measure' type='quantitative' />
+      <column caption='Stress Rate' datatype='real' name='[stress_rate]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/isaac/AppData/Local/Temp/TableauTemp/#TableauTemp_001arjk0syntft1emyzyk02mq9mg.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='01/02/2026 11:24:27 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Saves_Money</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Saves_Money]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Saves_Money</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Sheet1_4E6D3A9312C048C49C5A0481DF0BDA14]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>respondents</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[respondents]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>respondents</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_4E6D3A9312C048C49C5A0481DF0BDA14]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>stress_rate</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[stress_rate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>stress_rate</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_4E6D3A9312C048C49C5A0481DF0BDA14]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Sheet1' id='Sheet1_4E6D3A9312C048C49C5A0481DF0BDA14'>
+            <properties context=''>
+              <relation connection='excel-direct.1r6pp7e1l57utn12z2z270w78cyo' name='Sheet1' table='[Sheet1$]' type='table'>
+                <columns gridOrigin='A1:C4:no:A1:C4:0' header='yes' outcome='6'>
+                  <column datatype='string' name='Saves_Money' ordinal='0' />
+                  <column datatype='integer' name='respondents' ordinal='1' />
+                  <column datatype='real' name='stress_rate' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Financial Resilience By Bank Ownership'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (resilience_by_bank)' name='federated.0oz604y032cr8h195eqe9117h1y2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0oz604y032cr8h195eqe9117h1y2'>
+            <column caption='Has Bank Account' datatype='string' name='[Has_Bank_Account]' role='dimension' type='nominal' />
+            <column-instance column='[resilience_rate]' derivation='Avg' name='[avg:resilience_rate:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Has_Bank_Account]' derivation='None' name='[none:Has_Bank_Account:nk]' pivot='key' type='nominal' />
+            <column caption='Resilience Rate' datatype='real' name='[resilience_rate]' role='measure' type='quantitative' />
+            <column caption='Respondents' datatype='integer' name='[respondents]' role='measure' type='quantitative' />
+            <column-instance column='[respondents]' derivation='Sum' name='[sum:respondents:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0oz604y032cr8h195eqe9117h1y2].[none:Has_Bank_Account:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Has_Bank_Account:nk]' />
+              <groupfilter function='member' level='[none:Has_Bank_Account:nk]' member='&quot;None&quot;' />
+            </groupfilter>
+          </filter>
+          <single-value-per-nest-shelf-sorts>
+            <single-value-per-nest-shelf-sort dimension-to-sort='[federated.0oz604y032cr8h195eqe9117h1y2].[none:Has_Bank_Account:nk]' direction='ASC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0oz604y032cr8h195eqe9117h1y2].[none:Has_Bank_Account:nk]' shelf='rows' />
+          </single-value-per-nest-shelf-sorts>
+          <slices>
+            <column>[federated.0oz604y032cr8h195eqe9117h1y2].[none:Has_Bank_Account:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0oz604y032cr8h195eqe9117h1y2].[avg:resilience_rate:qk]' scope='cols' value='% Resilience Rate' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.0oz604y032cr8h195eqe9117h1y2].[none:Has_Bank_Account:nk]' value='216' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <tooltip column='[federated.0oz604y032cr8h195eqe9117h1y2].[sum:respondents:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-color' value='#4e79a7' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0oz604y032cr8h195eqe9117h1y2].[none:Has_Bank_Account:nk]</rows>
+        <cols>[federated.0oz604y032cr8h195eqe9117h1y2].[avg:resilience_rate:qk]</cols>
+      </table>
+      <simple-id uuid='{240CCBB7-FEA6-4BD8-B2F7-2FFDD8D18A83}' />
+    </worksheet>
+    <worksheet name='Financial Resilience By Momo Ownership'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (resilience_by_bank)' name='federated.0oz604y032cr8h195eqe9117h1y2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0oz604y032cr8h195eqe9117h1y2'>
+            <column caption='Has Mobile Money' datatype='string' name='[Has_Mobile_Money]' role='dimension' type='nominal' />
+            <column-instance column='[resilience_rate]' derivation='Avg' name='[avg:resilience_rate:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Has_Mobile_Money]' derivation='None' name='[none:Has_Mobile_Money:nk]' pivot='key' type='nominal' />
+            <column caption='Resilience Rate' datatype='real' name='[resilience_rate]' role='measure' type='quantitative' />
+            <column caption='Respondents' datatype='integer' name='[respondents]' role='measure' type='quantitative' />
+            <column-instance column='[respondents]' derivation='Sum' name='[sum:respondents:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0oz604y032cr8h195eqe9117h1y2].[none:Has_Mobile_Money:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Has_Mobile_Money:nk]' />
+              <groupfilter function='member' level='[none:Has_Mobile_Money:nk]' member='&quot;None&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0oz604y032cr8h195eqe9117h1y2].[none:Has_Mobile_Money:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0oz604y032cr8h195eqe9117h1y2].[avg:resilience_rate:qk]' scope='cols' value='%Resilience Rate' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.0oz604y032cr8h195eqe9117h1y2].[none:Has_Mobile_Money:nk]' value='204' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0oz604y032cr8h195eqe9117h1y2].[avg:resilience_rate:qk]' palette='blue_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <tooltip column='[federated.0oz604y032cr8h195eqe9117h1y2].[sum:respondents:qk]' />
+              <color column='[federated.0oz604y032cr8h195eqe9117h1y2].[avg:resilience_rate:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#00557f' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0oz604y032cr8h195eqe9117h1y2].[none:Has_Mobile_Money:nk]</rows>
+        <cols>[federated.0oz604y032cr8h195eqe9117h1y2].[avg:resilience_rate:qk]</cols>
+      </table>
+      <simple-id uuid='{4901817A-8648-4A58-A3AC-44480F45550C}' />
+    </worksheet>
+    <worksheet name='Overall Financial Stress (%)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (Stress_respondents_percentage)' name='federated.1dm9c6a0eupvvk1a29e7z0pkrqc8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1dm9c6a0eupvvk1a29e7z0pkrqc8'>
+            <column-instance column='[stress_related_percent]' derivation='Avg' name='[avg:stress_related_percent:ok]' pivot='key' type='ordinal' />
+            <column caption='Stress Related Percent' datatype='real' name='[stress_related_percent]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1dm9c6a0eupvvk1a29e7z0pkrqc8].[avg:stress_related_percent:ok]' value='' />
+            <format attr='width' value='648' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.1dm9c6a0eupvvk1a29e7z0pkrqc8].[avg:stress_related_percent:ok]' value='p0.00%' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Text' />
+            <encodings>
+              <text column='[federated.1dm9c6a0eupvvk1a29e7z0pkrqc8].[avg:stress_related_percent:ok]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontname='Tableau Bold' fontsize='18'><![CDATA[<[federated.1dm9c6a0eupvvk1a29e7z0pkrqc8].[avg:stress_related_percent:ok]>% ]]></run>
+                <run bold='true' fontname='Tableau Bold' fontsize='14'>of respondents report financial Stress</run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontname='Tableau Bold' fontsize='14'>Sample Size: 13,994 respondents</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{B27BFEF9-C5B0-4F7D-B0DA-F5C9A0C61382}' />
+    </worksheet>
+    <worksheet name='Saving-Stress Evaluation'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (Saving_stress_evaluation)' name='federated.0b259fy0eawaqd17w1hmk1hjonki' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0b259fy0eawaqd17w1hmk1hjonki'>
+            <column caption='Saves Money' datatype='string' name='[Saves_Money]' role='dimension' type='nominal' />
+            <column-instance column='[Saves_Money]' derivation='None' name='[none:Saves_Money:nk]' pivot='key' type='nominal' />
+            <column caption='Stress Rate' datatype='real' name='[stress_rate]' role='measure' type='quantitative' />
+            <column-instance column='[stress_rate]' derivation='Sum' name='[sum:stress_rate:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0b259fy0eawaqd17w1hmk1hjonki].[none:Saves_Money:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#ffbe7d' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0b259fy0eawaqd17w1hmk1hjonki].[none:Saves_Money:nk]</rows>
+        <cols>[federated.0b259fy0eawaqd17w1hmk1hjonki].[sum:stress_rate:qk]</cols>
+      </table>
+      <simple-id uuid='{ABDA3730-B6F3-4A12-BDCD-3CF7F938E141}' />
+    </worksheet>
+    <worksheet name='Stress By Age'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (stress_by_age)' name='federated.1hqyr7t01ertvh17gp5dn1682u5q' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1hqyr7t01ertvh17gp5dn1682u5q'>
+            <column caption='Age Group' datatype='string' name='[age_group]' role='dimension' type='nominal' />
+            <column-instance column='[stress_rate]' derivation='Avg' name='[avg:stress_rate:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[age_group]' derivation='None' name='[none:age_group:nk]' pivot='key' type='nominal' />
+            <column caption='Respondents' datatype='integer' name='[respondents]' role='measure' type='quantitative' />
+            <column caption='Stress Rate' datatype='real' name='[stress_rate]' role='measure' type='quantitative' />
+            <column-instance column='[respondents]' derivation='Sum' name='[sum:respondents:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <single-value-per-nest-shelf-sorts>
+            <single-value-per-nest-shelf-sort dimension-to-sort='[federated.1hqyr7t01ertvh17gp5dn1682u5q].[none:age_group:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1hqyr7t01ertvh17gp5dn1682u5q].[none:age_group:nk]' shelf='rows' />
+          </single-value-per-nest-shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1hqyr7t01ertvh17gp5dn1682u5q].[avg:stress_rate:qk]' scope='cols' value='% Stress Rate' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.1hqyr7t01ertvh17gp5dn1682u5q].[none:age_group:nk]' value='100' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1hqyr7t01ertvh17gp5dn1682u5q].[avg:stress_rate:qk]' palette='brown_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <tooltip column='[federated.1hqyr7t01ertvh17gp5dn1682u5q].[sum:respondents:qk]' />
+              <color column='[federated.1hqyr7t01ertvh17gp5dn1682u5q].[avg:stress_rate:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1hqyr7t01ertvh17gp5dn1682u5q].[none:age_group:nk]</rows>
+        <cols>[federated.1hqyr7t01ertvh17gp5dn1682u5q].[avg:stress_rate:qk]</cols>
+      </table>
+      <simple-id uuid='{9B19BCDB-0201-4F6C-9B29-53EF97F5D3AF}' />
+    </worksheet>
+    <worksheet name='Stress Rate By Residence'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (Stress_by_residence)' name='federated.1pbg3im1ewqwnr19nzwdf1wmdou4' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1pbg3im1ewqwnr19nzwdf1wmdou4'>
+            <column datatype='string' name='[Residence]' role='dimension' type='nominal' />
+            <column-instance column='[stress_rate]' derivation='Avg' name='[avg:stress_rate:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Residence]' derivation='None' name='[none:Residence:nk]' pivot='key' type='nominal' />
+            <column caption='Stress Rate' datatype='real' name='[stress_rate]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <single-value-per-nest-shelf-sorts>
+            <single-value-per-nest-shelf-sort dimension-to-sort='[federated.1pbg3im1ewqwnr19nzwdf1wmdou4].[none:Residence:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1pbg3im1ewqwnr19nzwdf1wmdou4].[none:Residence:nk]' shelf='rows' />
+          </single-value-per-nest-shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1pbg3im1ewqwnr19nzwdf1wmdou4].[avg:stress_rate:qk]' scope='cols' value='% Stress Rate' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.1pbg3im1ewqwnr19nzwdf1wmdou4].[none:Residence:nk]' value='108' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1pbg3im1ewqwnr19nzwdf1wmdou4].[avg:stress_rate:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1pbg3im1ewqwnr19nzwdf1wmdou4].[none:Residence:nk]</rows>
+        <cols>[federated.1pbg3im1ewqwnr19nzwdf1wmdou4].[avg:stress_rate:qk]</cols>
+      </table>
+      <simple-id uuid='{123E12AF-ABBA-4890-BEE9-61581934747E}' />
+    </worksheet>
+    <worksheet name='Stress by Multiple Factors'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (stress_by_multiple_factors)' name='federated.1pt7qux18gl2rg18yfasw10rb390' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1pt7qux18gl2rg18yfasw10rb390'>
+            <column caption='Emergency Fund' datatype='string' name='[Emergency_Fund]' role='dimension' type='nominal' />
+            <column caption='Income Shortfall Freq' datatype='string' name='[Income_Shortfall_Freq]' role='dimension' type='nominal' />
+            <column-instance column='[stress_rate]' derivation='Avg' name='[avg:stress_rate:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Emergency_Fund]' derivation='None' name='[none:Emergency_Fund:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Income_Shortfall_Freq]' derivation='None' name='[none:Income_Shortfall_Freq:nk]' pivot='key' type='nominal' />
+            <column caption='Respondents' datatype='integer' name='[respondents]' role='measure' type='quantitative' />
+            <column caption='Stress Rate' datatype='real' name='[stress_rate]' role='measure' type='quantitative' />
+            <column-instance column='[respondents]' derivation='Sum' name='[sum:respondents:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1pt7qux18gl2rg18yfasw10rb390].[none:Emergency_Fund:nk]' value='608' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.1pt7qux18gl2rg18yfasw10rb390].[none:Income_Shortfall_Freq:nk]' value='200' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1pt7qux18gl2rg18yfasw10rb390].[avg:stress_rate:qk]' palette='blue_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.1pt7qux18gl2rg18yfasw10rb390].[avg:stress_rate:qk]' />
+              <text column='[federated.1pt7qux18gl2rg18yfasw10rb390].[avg:stress_rate:qk]' />
+              <tooltip column='[federated.1pt7qux18gl2rg18yfasw10rb390].[sum:respondents:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1pt7qux18gl2rg18yfasw10rb390].[none:Income_Shortfall_Freq:nk]</rows>
+        <cols>[federated.1pt7qux18gl2rg18yfasw10rb390].[none:Emergency_Fund:nk]</cols>
+      </table>
+      <simple-id uuid='{6BDCF368-A27D-4F99-A988-00A4F795ABCF}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98152' id='9' param='horz' type-v2='layout-flow' w='98848' x='576' y='924'>
+            <zone h='98152' id='7' type-v2='layout-basic' w='87337' x='576' y='924'>
+              <zone h='24538' id='3' name='Overall Financial Stress (%)' w='45036' x='576' y='924'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49076' id='6' name='Saving-Stress Evaluation' w='42301' x='45612' y='924'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49076' id='11' name='Stress By Age' w='87337' x='576' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='24538' id='12' name='Stress Rate By Residence' w='45036' x='576' y='25462'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='98152' id='8' is-fixed='true' param='vert' type-v2='layout-flow' w='11511' x='87913' y='924'>
+              <zone h='12587' id='10' name='Saving-Stress Evaluation' pane-specification-id='0' param='[federated.0b259fy0eawaqd17w1hmk1hjonki].[none:Saves_Money:nk]' type-v2='color' w='11511' x='87913' y='924'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='9354' id='13' name='Stress Rate By Residence' pane-specification-id='0' param='[federated.1pbg3im1ewqwnr19nzwdf1wmdou4].[avg:stress_rate:qk]' type-v2='color' w='11511' x='87913' y='13511'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1150' minheight='1150' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='15' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98152' id='14' param='vert' type-v2='layout-flow' w='98848' x='576' y='924'>
+                <zone fixed-size='189' h='24538' id='3' is-fixed='true' name='Overall Financial Stress (%)' w='45036' x='576' y='924'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49076' id='6' is-fixed='true' name='Saving-Stress Evaluation' w='42301' x='45612' y='924'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='12587' id='10' name='Saving-Stress Evaluation' pane-specification-id='0' param='[federated.0b259fy0eawaqd17w1hmk1hjonki].[none:Saves_Money:nk]' type-v2='color' w='11511' x='87913' y='924'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='188' h='24538' id='12' is-fixed='true' name='Stress Rate By Residence' w='45036' x='576' y='25462'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9354' id='13' name='Stress Rate By Residence' pane-specification-id='0' param='[federated.1pbg3im1ewqwnr19nzwdf1wmdou4].[avg:stress_rate:qk]' type-v2='color' w='11511' x='87913' y='13511'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49076' id='11' is-fixed='true' name='Stress By Age' w='87337' x='576' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{C0366E1A-C9E2-416C-BDE5-58C09C033923}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 2'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98152' id='8' param='horz' type-v2='layout-flow' w='98848' x='576' y='924'>
+            <zone h='98152' id='6' type-v2='layout-basic' w='98848' x='576' y='924'>
+              <zone h='98152' id='3' name='Stress by Multiple Factors' w='67174' x='576' y='924'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49076' id='5' name='Financial Resilience By Momo Ownership' w='31674' x='67750' y='924'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49076' id='10' name='Financial Resilience By Bank Ownership' w='31674' x='67750' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='900' minheight='900' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='12' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98152' id='11' param='vert' type-v2='layout-flow' w='98848' x='576' y='924'>
+                <zone fixed-size='280' h='98152' id='3' is-fixed='true' name='Stress by Multiple Factors' w='67174' x='576' y='924'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49076' id='5' is-fixed='true' name='Financial Resilience By Momo Ownership' w='31674' x='67750' y='924'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49076' id='10' is-fixed='true' name='Financial Resilience By Bank Ownership' w='31674' x='67750' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{8D116145-7E29-44DB-ABED-E17ED86357BF}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.5' source-height='198'>
+    <window class='worksheet' name='Overall Financial Stress (%)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{833A6BC1-65D6-4CED-9A76-8E6EECC42BCF}' />
+    </window>
+    <window class='worksheet' name='Stress by Multiple Factors'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-height' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1pt7qux18gl2rg18yfasw10rb390].[avg:stress_rate:qk]</field>
+            <field>[federated.1pt7qux18gl2rg18yfasw10rb390].[none:Emergency_Fund:nk]</field>
+            <field>[federated.1pt7qux18gl2rg18yfasw10rb390].[none:Income_Shortfall_Freq:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{F71B1FDA-1F0F-4040-BBE5-933E94F8B165}' />
+    </window>
+    <window class='worksheet' name='Saving-Stress Evaluation'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0b259fy0eawaqd17w1hmk1hjonki].[none:Saves_Money:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-height' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0b259fy0eawaqd17w1hmk1hjonki].[none:Saves_Money:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{1059131D-2474-4F52-A030-0D84576A0859}' />
+    </window>
+    <window class='worksheet' name='Stress By Age'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-height' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1hqyr7t01ertvh17gp5dn1682u5q].[avg:stress_rate:qk]</field>
+            <field>[federated.1hqyr7t01ertvh17gp5dn1682u5q].[none:age_group:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{F3758CFB-F18C-42AD-8731-E4A1F8E8BF7F}' />
+    </window>
+    <window class='worksheet' name='Stress Rate By Residence'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1pbg3im1ewqwnr19nzwdf1wmdou4].[avg:stress_rate:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-height' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1pbg3im1ewqwnr19nzwdf1wmdou4].[none:Residence:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{C28D90BC-AA55-4A08-BDD1-90878186D24D}' />
+    </window>
+    <window class='worksheet' name='Financial Resilience By Momo Ownership'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0oz604y032cr8h195eqe9117h1y2].[avg:resilience_rate:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-height' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0oz604y032cr8h195eqe9117h1y2].[none:Has_Mobile_Money:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{3CED7D5B-A6F0-4B35-9250-93C0E1D41768}' />
+    </window>
+    <window class='worksheet' name='Financial Resilience By Bank Ownership'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-height' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0oz604y032cr8h195eqe9117h1y2].[none:Has_Bank_Account:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{D06DA0A0-9D47-4231-8450-C77C206B3F7A}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Overall Financial Stress (%)' />
+        <viewpoint name='Saving-Stress Evaluation'>
+          <zoom type='fit-height' />
+          <highlight>
+            <color-one-way>
+              <field>[federated.0b259fy0eawaqd17w1hmk1hjonki].[none:Saves_Money:nk]</field>
+            </color-one-way>
+          </highlight>
+        </viewpoint>
+        <viewpoint name='Stress By Age'>
+          <zoom type='fit-height' />
+        </viewpoint>
+        <viewpoint name='Stress Rate By Residence'>
+          <zoom type='fit-height' />
+        </viewpoint>
+      </viewpoints>
+      <active id='8' />
+      <simple-id uuid='{3EBB956A-73D8-4423-B76B-92B0834BDAC3}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 2'>
+      <viewpoints>
+        <viewpoint name='Financial Resilience By Bank Ownership'>
+          <zoom type='fit-height' />
+        </viewpoint>
+        <viewpoint name='Financial Resilience By Momo Ownership'>
+          <zoom type='fit-height' />
+        </viewpoint>
+        <viewpoint name='Stress by Multiple Factors'>
+          <zoom type='fit-height' />
+        </viewpoint>
+      </viewpoints>
+      <active id='3' />
+      <simple-id uuid='{31DB7107-A5C1-4E91-B060-063328006AEC}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      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
+      c2NHkoiMisJsMoFQ+etvnsEtWYmMCEMVApCIjIzEbDYhECiyitVqQac/7b+bf2ALi1ZsJjEp
+      EUmc3XxRiU4ZymuL3uX+OWNZ8ckWdHodqhDodZ16LLjrfiaPGUooGKQkPxd70lAmDM/gGw8/
+      1Zv39rLh8Qe5/9nlXf/OYwCCj1cuZcj0m5k6IgUAvdHO9554nDf+/D8sXHgX9Uos99wxl8bK
+      YpavWo1sjOE/n36ap59+mv966rvERERz3zfuJORz8sdf/T9uvfU23l1/iKf+44dY9SCEwlv/
+      fI3b7rkfS1g0C2+ayJOPPYxt8Awy4x0AjJo6C3/ZPh559HEGzriFpHALNpv9jI6yhC0sDEmS
+      MESkcPecCWzduo09e/fjbqrkxVffpKiijoEDMgBY99HrfO8nv+PBB+7jplvuZOeK13n8yZ/x
+      9QcfxGgwYrWYQdJht9sYNXkGtVmb+NHPfkVAMpOQOY4ZQ2PYum0Hh7Ny0ZtM2KwWJEnCZrNg
+      tDrIiDfw5Pd/xO7tm3lnyWqaXAHSkjtrAElvwG7r9G4cO2M2sQYPO3buIqeoEp0EWbs+5pHH
+      fsi1t9zFzFnzcBXs5JFHHmfYrDtIdFix22ycevDxE4bwn489RklT59oBg9GIxdzpJ2+12dFJ
+      ElabHb0kYTJbMBoNxEQ7+Hj5MuravBgNeiw2O3qdhNFkwWQ08eC3H+LFX/+E7z/1M7xCj81q
+      we6IpLEij0827cJqtSLpO8+fekcWv/x7Hvr2w3y48QgL5l5P6qDhFO35mD/+/W2MJgtmU6dO
+      d37jPoqz97Nr1y6anR4+Wfb25XyfL5nP5QsU8HlwdviIiYk5+XW8OKra6Z9ttdkxnPxKnepc
+      6fWGzqFUIfB4vVhtNnRnjK2qqoLXF+h8eS7kDH4Sv9+H0WRGr9OhKjL+oIzVYmHZP/+P1uhJ
+      PLJwFvqTXzklFCQgq2cUanfkUBAh6TEa9F06+/1+zBZLNx1PIVQVfzCIxWJBDgZQhITFbDrn
+      us57qfj9ASwWC0e2LGHZYRe//q+H0en1J2tcGa8/eN7nPqWHxWLpUZ5w8n6BkNJp5J+BIodQ
+      0GEynKoFBH6fH5PZgu68ZS0I+AMYTKaur74cCqKiw2Ts3rVU5BCySpdR9CXODh8P/e50Z71f
+      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
+      AElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Dashboard 2' width='192'>
+      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
+      Ar4AAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Financial Resilience By Bank Ownership' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Financial Resilience By Momo Ownership' width='192'>
+      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
+      AhDT/g1G9nF1TN17IQAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='91' name='Overall Financial Stress (%)' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Saving-Stress Evaluation' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Stress By Age' width='192'>
+      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
+      lAogRvt/IhphAtKV/R0AAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Stress Rate By Residence' width='192'>
+      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
+      gg==
+    </thumbnail>
+    <thumbnail height='192' name='Stress by Multiple Factors' width='192'>
+      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
+      G9GGAAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
